@@ -40,11 +40,15 @@
 <script src="script.js"></script>
 </body>
 </html>
-<div id="formWrapper" class="form hidden">
-  <h3>Оставить заявку</h3>
+ <section class="contact">
+  <h2>Начни сегодня</h2>
+  <p>Оставь заявку и мы свяжемся с тобой</p>
 
-  <input type="text" placeholder="Ваше имя">
-  <input type="tel" placeholder="Телефон">
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Ваше имя">
+    <input type="text" id="phone" placeholder="Телефон">
+    <button type="submit">Оставить заявку</button>
+  </form>
 
-  <button id="sendBtn">Отправить</button>
-</div>
+  <p id="message"></p>
+</section>
