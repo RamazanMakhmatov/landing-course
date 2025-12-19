@@ -1,25 +1,18 @@
-const contactBtn = document.getElementById("contactBtn");
-const formWrapper = document.getElementById("formWrapper");
+document.addEventListener("DOMContentLoaded", function () {
 
-contactBtn.addEventListener("click", function () {
-  formWrapper.classList.toggle("hidden");
-});
-const form = document.getElementById("contactForm");
-const nameInput = document.getElementById("name");
-const phoneInput = document.getElementById("phone");
-const message = document.getElementById("message");
+  const ctaBtn = document.getElementById("ctaBtn");
+  const contactBtn = document.getElementById("contactBtn");
 
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
-
-  if (nameInput.value === "" || phoneInput.value === "") {
-    message.textContent = "❌ Заполните все поля";
-    message.style.color = "red";
-  } else {
-    message.textContent = "✅ Заявка отправлена!";
-    message.style.color = "green";
-
-    nameInput.value = "";
-    phoneInput.value = "";
+  if (ctaBtn) {
+    ctaBtn.addEventListener("click", function () {
+      alert("Заявка отправлена!");
+    });
   }
+
+  if (contactBtn) {
+    contactBtn.addEventListener("click", function () {
+      alert("Мы свяжемся с вами!");
+    });
+  }
+
 });
