@@ -1,18 +1,8 @@
-document.addEventListener("DOMContentLoaded", function () {
+const form = document.getElementById('contactForm');
+const message = document.getElementById('message');
 
-  const ctaBtn = document.getElementById("ctaBtn");
-  const contactBtn = document.getElementById("contactBtn");
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
 
-  if (ctaBtn) {
-    ctaBtn.addEventListener("click", function () {
-      alert("Заявка отправлена!");
-    });
-  }
-
-  if (contactBtn) {
-    contactBtn.addEventListener("click", function () {
-      alert("Мы свяжемся с вами!");
-    });
-  }
-
+  message.textContent = 'Заявка отправлена!';
 });
