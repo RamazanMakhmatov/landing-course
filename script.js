@@ -1,15 +1,6 @@
-const ctaBtn = document.getElementById('ctaBtn');
-const contactBtn = document.getElementById('contactBtn');
-
-ctaBtn.addEventListener('click', () => {
-  alert('Спасибо за интерес к курсу!');
-});
-
-contactBtn.addEventListener('click', () => {
-  alert('Заявка отправлена!');
-});
 const contactBtn = document.getElementById("contactBtn");
+const formWrapper = document.getElementById("formWrapper");
 
 contactBtn.addEventListener("click", function () {
-  alert("Спасибо! Мы скоро свяжемся с вами.");
+  formWrapper.classList.toggle("hidden");
 });
